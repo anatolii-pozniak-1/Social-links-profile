@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* 🎨 Colors */
+  --color-bg: #141414;
+  --color-card: #1F1F1F;
+  --color-text-primary: #FFFFFF;
+  --color-text-accent: #C4F82A;
+  --color-text-secondary: #D4D4D4;
+  --color-btn-bg: #333333;
+  --color-btn-text: #FFFFFF;
+
+  /* 🔤 Font weights */
+  --font-bold: 700;
+  --font-semi: 600;
+  --font-regular: 400;
+
+  /* 📏 Font sizes */
+  --font-size-title: 20px;
+  --font-size-subtitle: 14px;
+  --font-size-text: 14px;
+  --font-size-button: 14px;
+
+  /* 🖼️ Spacing & radius */
+  --card-radius: 12px;
+  --btn-radius: 8px;
+  --card-padding: 32px;
+  --btn-padding: 12px;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-primary);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--color-card);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.card h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size-title);
+  font-weight: var(--font-bold);
+  color: var(--color-text-primary);
+  margin: 16px 0 8px;
+}
+
+.card address {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-semi);
+  font-style: normal;
+  color: var(--color-text-accent);
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-regular);
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.button {
+  display: block;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-semi);
+  padding: var(--btn-padding);
+  margin: 8px 0;
+  border-radius: var(--btn-radius);
+  text-decoration: none;
+}
